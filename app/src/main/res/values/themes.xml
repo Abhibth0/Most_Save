@@ -1,0 +1,121 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MostSave" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="nav_item_selected_background">#261976D2</item> <!-- Default primary color with 15% opacity -->
+    </style>
+
+    <style name="Theme.MostSave" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="nav_item_selected_background">#261976D2</item> <!-- Default theme navigation background -->
+    </style>
+
+    <style name="Theme.MostSave.Blue" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#0000ff</item>
+        <item name="nav_item_selected_background">#260000ff</item>
+    </style>
+
+    <style name="Theme.MostSave.Orange" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#ffa500</item>
+        <item name="nav_item_selected_background">#26ffa500</item>
+    </style>
+
+    <style name="Theme.MostSave.Red" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#ff0000</item>
+        <item name="nav_item_selected_background">#26ff0000</item>
+    </style>
+
+    <style name="Theme.MostSave.Pink" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#ff00ff</item>
+        <item name="nav_item_selected_background">#26ff00ff</item>
+    </style>
+
+    <style name="Theme.MostSave.Teal" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#009688</item>
+        <item name="nav_item_selected_background">#26009688</item>
+    </style>
+
+    <style name="Theme.MostSave.Green" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="nav_item_selected_background">#264CAF50</item>
+    </style>
+
+    <style name="Theme.MostSave.LightGreen" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#8BC34A</item>
+        <item name="nav_item_selected_background">#268BC34A</item>
+    </style>
+
+    <style name="Theme.MostSave.Lime" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#CDDC39</item>
+        <item name="nav_item_selected_background">#26CDDC39</item>
+    </style>
+
+    <style name="Theme.MostSave.Yellow" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#FFEB3B</item>
+        <item name="nav_item_selected_background">#26FFEB3B</item>
+    </style>
+
+    <style name="Theme.MostSave.Amber" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#FFC107</item>
+        <item name="nav_item_selected_background">#26FFC107</item>
+    </style>
+
+    <style name="Theme.MostSave.DeepOrange" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#FF5722</item>
+        <item name="nav_item_selected_background">#26FF5722</item>
+    </style>
+
+    <style name="Theme.MostSave.Brown" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#795548</item>
+        <item name="nav_item_selected_background">#26795548</item>
+    </style>
+
+    <style name="Theme.MostSave.Grey" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#9E9E9E</item>
+        <item name="nav_item_selected_background">#269E9E9E</item>
+    </style>
+
+    <style name="Theme.MostSave.BlueGrey" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#607D8B</item>
+        <item name="nav_item_selected_background">#26607D8B</item>
+    </style>
+
+    <style name="Theme.MostSave.Indigo" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="nav_item_selected_background">#263F51B5</item>
+    </style>
+
+    <style name="Theme.MostSave.Purple" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="nav_item_selected_background">#269C27B0</item>
+    </style>
+
+    <style name="Theme.MostSave.DeepPurple" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="nav_item_selected_background">#26673AB7</item>
+    </style>
+
+    <style name="Theme.MostSave.Cyan" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="nav_item_selected_background">#2600BCD4</item>
+    </style>
+
+    <style name="Theme.MostSave.LightBlue" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#03A9F4</item>
+        <item name="nav_item_selected_background">#2603A9F4</item>
+    </style>
+
+    <style name="Theme.MostSave.LightPink" parent="Base.Theme.MostSave">
+        <item name="colorPrimary">#F48FB1</item>
+        <item name="nav_item_selected_background">#26F48FB1</item>
+    </style>
+
+    <!-- Custom Chip Style for Small Icon -->
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="checkedIconSize">6dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="chipMinHeight">36dp</item>
+        <item name="chipIconSize">6dp</item>
+    </style>
+</resources>

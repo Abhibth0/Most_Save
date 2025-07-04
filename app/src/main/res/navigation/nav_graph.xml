@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mostsave.ui.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.mostsave.ui.fragments.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.example.mostsave.ui.fragments.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/fragment_categories" />
+
+    <fragment
+        android:id="@+id/nav_recycle_bin"
+        android:name="com.example.mostsave.ui.fragments.RecycleBinFragment"
+        android:label="@string/menu_recycle_bin"
+        tools:layout="@layout/fragment_recycle_bin" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.mostsave.ui.fragments.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_nav_settings_to_nav_security_settings"
+            app:destination="@id/nav_security_settings" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_advance_settings"
+            app:destination="@id/nav_advance_settings" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_appearance"
+            app:destination="@id/nav_appearance" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_about_most_save"
+            app:destination="@id/nav_about_most_save" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about_most_save"
+        android:name="com.example.mostsave.ui.fragments.AboutMostSaveFragment"
+        android:label="About MostSave"
+        tools:layout="@layout/fragment_about_most_save" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.mostsave.ui.history.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_appearance"
+        android:name="com.example.mostsave.ui.fragments.AppearanceFragment"
+        android:label="Appearance"
+        tools:layout="@layout/fragment_appearance" />
+
+    <fragment
+        android:id="@+id/nav_security_settings"
+        android:name="com.example.mostsave.ui.fragments.SecuritySettingsFragment"
+        android:label="@string/setting_label_security"
+        tools:layout="@layout/fragment_security_settings" />
+
+    <fragment
+        android:id="@+id/nav_advance_settings"
+        android:name="com.example.mostsave.ui.fragments.AdvanceSettingsFragment"
+        android:label="@string/setting_label_advance"
+        tools:layout="@layout/fragment_advance_settings" />
+
+    <fragment
+        android:id="@+id/nav_add_password"
+        android:name="com.example.mostsave.ui.fragments.AddPasswordFragment"
+        android:label="@string/title_add_password"
+        tools:layout="@layout/fragment_add_password" />
+
+    <fragment
+        android:id="@+id/nav_show_password"
+        android:name="com.example.mostsave.ui.fragments.ShowPasswordFragment"
+        android:label="@string/title_show_password"
+        tools:layout="@layout/fragment_show_password">
+        <argument
+            android:name="passwordId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_analyze_passwords"
+        android:name="com.example.mostsave.ui.fragments.PasswordAnalysisFragment"
+        android:label="@string/title_analyze_passwords"
+        tools:layout="@layout/fragment_password_analysis">
+        <action
+            android:id="@+id/action_nav_analyze_passwords_to_nav_show_password"
+            app:destination="@id/nav_show_password" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="33dp"
+    android:height="33dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- 6 dots centered in 2 columns and 3 rows -->
+    <path
+        android:fillColor="#000"
+        android:pathData="
+            M10,7a1.4,1.4 0 1,0 0.001,0z
+            M10,12a1.4,1.4 0 1,0 0.001,0z
+            M10,17a1.4,1.4 0 1,0 0.001,0z
+            M14,7a1.4,1.4 0 1,0 0.001,0z
+            M14,12a1.4,1.4 0 1,0 0.001,0z
+            M14,17a1.4,1.4 0 1,0 0.001,0z" />
+</vector>

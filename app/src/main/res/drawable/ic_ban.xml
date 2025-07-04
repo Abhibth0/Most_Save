@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer Circle Border (Transparent fill, red stroke) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF0000"
+        android:strokeWidth="2"
+        android:pathData="M12,2A10,10 0 1,0 22,12A10,10 0 0,0 12,2Z" />
+
+    <!-- Slash Line -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF0000"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M6.34,6.34L17.66,17.66" />
+</vector>

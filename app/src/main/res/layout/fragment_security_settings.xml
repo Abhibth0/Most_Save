@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".ui.fragments.SecuritySettingsFragment">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_app_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/setting_app_lock"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_app_lock_description"
+            android:paddingTop="4dp"
+            android:alpha="0.5"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_allow_screenshots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/setting_allow_screenshots"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_allow_screenshots_description"
+            android:paddingTop="4dp"
+            android:alpha="0.5"/>
+
+        <!-- Auto-clear Clipboard Toggle Switch -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_auto_clear_clipboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Auto-clear Clipboard"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Auto-clear Clipboard Timer Setting (only visible when switch is ON) -->
+        <LinearLayout
+            android:id="@+id/layout_clipboard_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear after"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+            <TextView
+                android:id="@+id/tv_clipboard_timer_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60 seconds"
+                android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                android:alpha="0.7" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Automatically clear copied passwords from clipboard"
+            android:paddingTop="4dp"
+            android:alpha="0.5"/>
+
+    </LinearLayout>
+</layout>

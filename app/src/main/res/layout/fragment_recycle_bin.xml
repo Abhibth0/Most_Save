@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.RecycleBinFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_deleted_passwords"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_deleted_password" />
+
+    <ImageView
+        android:id="@+id/image_view_empty_recycle_bin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_no_recyclebin_password"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:contentDescription="@string/empty_recycle_bin_message"
+        android:scaleX="0.56"
+        android:scaleY="0.56"
+        android:alpha="0.55" />
+
+</FrameLayout>
