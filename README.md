@@ -60,11 +60,13 @@ MostSave is a **secure, offline password manager** designed for Android devices 
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="assets/images/screenshot1.png" alt="Home Screen" width="200">
-  <img src="assets/images/screenshot2.png" alt="Add Password" width="200">
-  <img src="assets/images/screenshot3.png" alt="Security Settings" width="200">
-  <img src="assets/images/screenshot4.png" alt="Password Analysis" width="200">
+  <img src="assets/images/screenshots/screenshot1.png" alt="Home Screen" width="200">
+  <img src="assets/images/screenshots/screenshot2.png" alt="Add Password" width="200">
+  <img src="assets/images/screenshots/screenshot3.png" alt="Security Settings" width="200">
+  <img src="assets/images/screenshots/screenshot4.png" alt="Password Analysis" width="200">
 </div>
+
+*Click on images to view full size*
 
 ---
 
