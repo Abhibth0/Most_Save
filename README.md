@@ -1,7 +1,7 @@
-# MostSave - Secure Password Manager
-
 <div align="center">
-  <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="MostSave Logo" width="120" height="120">
+  <img src="assets/images/logo.webp" alt="MostSave Logo" width="120" height="120">
+  
+  # MostSave - Secure Password Manager
   
   **Your Passwords Stay Here - Not Online**
   
@@ -9,11 +9,24 @@
   [![API](https://img.shields.io/badge/API-24%2B-brightgreen.svg)](https://android-arsenal.com/api?level=24)
   [![Version](https://img.shields.io/badge/Version-2.1.11-blue.svg)](https://github.com/Abhibth0/Most_Save)
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Abhibth0/Most_Save/blob/main/LICENSE)
+  
+  [Download APK](https://github.com/Abhibth0/Most_Save/releases/latest) • [Report Bug](https://github.com/Abhibth0/Most_Save/issues) • [Request Feature](https://github.com/Abhibth0/Most_Save/issues)
 </div>
+
+---
 
 ## 🔐 Overview
 
-MostSave is a secure, feature-rich password manager for Android that prioritizes your privacy and security. With military-grade encryption and biometric authentication, your passwords remain completely offline and under your control.
+MostSave is a **secure, offline password manager** designed for Android devices that prioritizes your privacy and security above all else. With military-grade encryption and biometric authentication, your passwords remain completely offline and under your control - never synced to the cloud.
+
+### Why MostSave?
+- 🛡️ **Complete Privacy**: Your data never leaves your device
+- 🔒 **Military-Grade Security**: AES-256 encryption with SQLCipher
+- 🚀 **Lightning Fast**: Instant access with biometric authentication
+- 📱 **Modern Design**: Beautiful Material Design interface
+- 🆓 **Completely Free**: No subscriptions, no ads, no tracking
+
+---
 
 ## ✨ Key Features
 
@@ -23,223 +36,227 @@ MostSave is a secure, feature-rich password manager for Android that prioritizes
 - **Biometric Authentication**: Fingerprint and face unlock support
 - **Security Analysis**: Built-in password strength analyzer
 - **Auto-lock**: Configurable timeout for enhanced security
+- **Master Password**: Strong master password protection
 
 ### 📱 User Experience
 - **Material Design**: Clean, modern interface following Android design guidelines
-- **Dark/Light Theme**: Customizable appearance with multiple theme options
+- **Dark/Light Theme**: Customizable appearance with system theme support
 - **Smart Organization**: Category-based password organization
 - **Quick Actions**: One-tap copy, show/hide, and edit operations
 - **Search & Filter**: Fast password search and sorting options
+- **Intuitive Navigation**: Easy-to-use interface for all age groups
 
 ### 🔧 Advanced Features
-- **Password Generator**: Create strong, unique passwords
+- **Password Generator**: Create strong, unique passwords with customizable options
 - **Favorites**: Quick access to frequently used passwords
 - **Recycle Bin**: Safely recover accidentally deleted passwords
 - **URL Integration**: Store and open associated websites
 - **Multi-Select**: Bulk operations for efficient management
 - **Export/Import**: Backup and restore your password database
+- **Categories**: Organize passwords by type (Social, Banking, Work, etc.)
+
+---
 
 ## 📱 Screenshots
 
-| Home Screen | Add Password | Security Settings | Password Analysis |
-|-------------|--------------|-------------------|-------------------|
-| ![Home](screenshots/home.png) | ![Add](screenshots/add.png) | ![Security](screenshots/security.png) | ![Analysis](screenshots/analysis.png) |
+<div align="center">
+  <img src="assets/images/screenshot1.png" alt="Home Screen" width="200">
+  <img src="assets/images/screenshot2.png" alt="Add Password" width="200">
+  <img src="assets/images/screenshot3.png" alt="Security Settings" width="200">
+  <img src="assets/images/screenshot4.png" alt="Password Analysis" width="200">
+</div>
+
+---
 
 ## 🚀 Installation
 
 ### Requirements
 - Android 7.0 (API level 24) or higher
-- Biometric hardware (optional, for fingerprint/face unlock)
+- Biometric sensor (optional, for biometric authentication)
 
-### Download
-1. Download the latest APK from [Releases](https://github.com/Abhibth0/Most_Save/releases)
-2. Enable "Install from unknown sources" in your device settings
-3. Install the APK file
+### Download Options
 
-### Build from Source
+#### Option 1: GitHub Releases (Recommended)
+1. Visit our [Releases page](https://github.com/Abhibth0/Most_Save/releases)
+2. Download the latest APK file
+3. Enable "Install from Unknown Sources" in your device settings
+4. Install the APK file
+
+#### Option 2: Build from Source
 ```bash
 # Clone the repository
 git clone https://github.com/Abhibth0/Most_Save.git
+
+# Navigate to project directory
 cd Most_Save
 
-# Build the project
-./gradlew assembleDebug
-
-# Install on connected device
-./gradlew installDebug
+# Build the APK
+./gradlew assembleRelease
 ```
 
-## 🏗️ Technical Architecture
+---
+
+## 🛠️ Technical Details
 
 ### Built With
-- **Language**: Java & Kotlin
+- **Language**: Kotlin
 - **Architecture**: MVVM (Model-View-ViewModel)
-- **Database**: Room with SQLCipher encryption
-- **UI**: Material Design Components
-- **Security**: Android Security Crypto, Biometric API
-- **Charts**: MPAndroidChart for password analytics
-
-### Key Components
-```
-📁 app/src/main/java/com/example/mostsave/
-├── 📁 data/
-│   ├── 📁 database/     # Room database setup
-│   ├── 📁 model/        # Data models (Password, Category)
-│   ├── 📁 repository/   # Data access layer
-│   └── 📁 security/     # Encryption utilities
-├── 📁 ui/
-│   ├── 📁 fragments/    # UI screens
-│   ├── 📁 adapters/     # RecyclerView adapters
-│   └── 📁 dialogs/      # Custom dialogs
-├── 📁 utils/            # Utility classes
-└── 📁 viewmodel/        # ViewModel classes
-```
-
-## 🔐 Security Features
-
-### Encryption
-- **Database**: SQLCipher with AES-256 encryption
-- **Key Management**: Android Keystore for secure key storage
-- **Password Hashing**: PBKDF2 with salt for master password
-
-### Authentication
-- **Biometric**: Fingerprint and face recognition
-- **PIN/Pattern**: Fallback authentication methods
-- **Auto-lock**: Configurable timeout (30 seconds to 30 minutes)
-
-### Privacy
-- **No Network**: Zero network permissions for core functionality
-- **No Analytics**: No usage tracking or data collection
-- **Local Storage**: All data remains on your device
-
-## 📋 Usage Guide
-
-### First Time Setup
-1. **Install** the app and grant necessary permissions
-2. **Set Master Password** or enable biometric authentication
-3. **Import** existing passwords or start adding new ones
-4. **Configure** categories and security settings
-
-### Managing Passwords
-- **Add**: Tap the floating action button (+) to add new passwords
-- **Edit**: Long press or tap the edit icon on any password
-- **Copy**: Tap the copy icon to copy username/password to clipboard
-- **Delete**: Move unwanted passwords to recycle bin
-- **Organize**: Use categories to group related passwords
-
-### Security Best Practices
-- Use the built-in password generator for strong passwords
-- Enable biometric authentication for quick access
-- Regularly analyze password strength using the analysis feature
-- Keep the app updated for latest security patches
-
-## 🛠️ Development
+- **Database**: SQLCipher (encrypted SQLite)
+- **UI Framework**: Material Design Components
+- **Authentication**: Android Biometric API
+- **Encryption**: AES-256 encryption
 
 ### Project Structure
 ```
-MostSave/
-├── app/
-│   ├── src/main/
-│   │   ├── java/           # Source code
-│   │   ├── res/            # Resources (layouts, strings, etc.)
-│   │   └── AndroidManifest.xml
-│   └── build.gradle.kts    # App-level build configuration
-├── gradle/
-│   └── libs.versions.toml  # Dependency versions
-└── README.md
+app/
+├── src/main/
+│   ├── java/com/example/mostsave/
+│   │   ├── data/          # Database and repositories
+│   │   ├── ui/            # Activities and fragments
+│   │   ├── utils/         # Utility classes
+│   │   └── MainActivity.kt
+│   ├── res/               # Resources (layouts, strings, etc.)
+│   └── AndroidManifest.xml
+├── build.gradle.kts       # App-level build configuration
+└── proguard-rules.pro     # ProGuard configuration
 ```
 
-### Dependencies
-- **Room**: Local database with encryption
-- **Biometric**: Authentication API
-- **Navigation**: Android Navigation Component
-- **Material**: Material Design Components
-- **MPAndroidChart**: Data visualization
-- **Gson**: JSON serialization
+### Key Dependencies
+- SQLCipher for Android
+- Android Biometric Library
+- Material Design Components
+- Kotlin Coroutines
+- Room Database (with SQLCipher)
 
-### Contributing
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+---
 
-## 📊 Features Overview
+## 🔒 Security Features
 
-| Feature | Description | Status |
-|---------|-------------|--------|
-| 🔐 Offline Storage | All data stored locally | ✅ |
-| 🔒 Encryption | SQLCipher AES-256 | ✅ |
-| 👆 Biometric Auth | Fingerprint/Face unlock | ✅ |
-| 📱 Material Design | Modern Android UI | ✅ |
-| 🌙 Dark Mode | Theme customization | ✅ |
-| 📂 Categories | Password organization | ✅ |
-| 🔍 Search | Fast password search | ✅ |
-| 🗑️ Recycle Bin | Deleted password recovery | ✅ |
-| 📊 Analytics | Password strength analysis | ✅ |
-| 🔄 Backup/Restore | Data export/import | ✅ |
-| 🔗 URL Integration | Website links | ✅ |
-| ⭐ Favorites | Quick access | ✅ |
+### Encryption
+- **Database**: Encrypted using SQLCipher with AES-256
+- **Master Password**: Hashed using secure algorithms
+- **Biometric Data**: Stored in Android Keystore
 
-## 🔧 Configuration
+### Privacy
+- **No Internet Required**: App works completely offline
+- **No Data Collection**: We don't collect any personal information
+- **No Analytics**: No tracking or analytics libraries
+- **Open Source**: Code is transparent and auditable
 
-### Security Settings
-- **Master Password**: Set a strong master password
-- **Biometric**: Enable fingerprint/face unlock
-- **Auto-lock**: Configure timeout (30s - 30min)
-- **Screen Security**: Prevent screenshots in recent apps
+### Best Practices
+- Regular security audits
+- Secure coding practices
+- Minimal permissions required
+- No sensitive data in logs
 
-### Appearance
-- **Theme**: Light, Dark, or System default
-- **Colors**: Multiple color schemes available
-- **Layout**: Compact or comfortable list view
+---
 
-## 🐛 Troubleshooting
+## 📈 Version History
 
-### Common Issues
-1. **Biometric not working**: Ensure biometric is set up in device settings
-2. **App crashes**: Clear app data and reconfigure
-3. **Forgotten master password**: No recovery possible - this is by design for security
-4. **Database corruption**: Restore from backup if available
-
-### Support
-- Create an issue on GitHub for bug reports
-- Check existing issues before creating new ones
-- Provide device information and steps to reproduce
-
-## 🔄 Version History
-
-### v2.1.11 (Current)
-- Enhanced security features
-- Improved password analysis
-- Bug fixes and performance improvements
+### Current Version: 2.1.11 (Version Code: 13)
+- 🔧 Bug fixes and performance improvements
+- 🎨 UI/UX enhancements
+- 🛡️ Security improvements
 
 ### Previous Versions
-- v2.1.x: Security enhancements
-- v2.0.x: Major UI overhaul
-- v1.x.x: Initial release
+- **2.1.x**: Enhanced security features
+- **2.0.x**: Material Design implementation
+- **1.x.x**: Initial release with core features
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+### Ways to Contribute
+1. **Report Bugs**: [Create an issue](https://github.com/Abhibth0/Most_Save/issues)
+2. **Suggest Features**: [Request new features](https://github.com/Abhibth0/Most_Save/issues)
+3. **Submit Code**: Fork the repo and create a pull request
+4. **Improve Documentation**: Help us improve our docs
+
+### Development Setup
+```bash
+# Clone the repository
+git clone https://github.com/Abhibth0/Most_Save.git
+
+# Open in Android Studio
+# Build and run on your device/emulator
+```
+
+### Guidelines
+- Follow Kotlin coding conventions
+- Write clear commit messages
+- Test your changes thoroughly
+- Update documentation when needed
+
+---
+
+## 📞 Support & Contact
+
+### Developer Information
+- **Developer**: Abhishek Patel
+- **Email**: Abhishekpatelbth0@gmail.com
+- **GitHub**: [@Abhibth0](https://github.com/Abhibth0)
+
+### Get Help
+- 📋 [Create an Issue](https://github.com/Abhibth0/Most_Save/issues)
+- 📧 Email: Abhishekpatelbth0@gmail.com
+- 💬 [Discussions](https://github.com/Abhibth0/Most_Save/discussions)
+
+### FAQ
+**Q: Is my data safe?**
+A: Yes! All data is encrypted and stored locally on your device. We never sync to the cloud.
+
+**Q: Can I backup my passwords?**
+A: Yes, you can export your encrypted database for backup purposes.
+
+**Q: Does it work without internet?**
+A: Absolutely! MostSave works completely offline.
+
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Acknowledgments
+### MIT License Summary
+- ✅ Commercial use allowed
+- ✅ Modification allowed
+- ✅ Distribution allowed
+- ✅ Private use allowed
+- ❌ No warranty provided
 
-- **Android Team** for excellent development tools
-- **Material Design** for beautiful UI components
-- **SQLCipher** for secure database encryption
-- **Open Source Community** for various libraries used
+---
 
-## 📞 Contact
+## 🙏 Acknowledgments
 
-- **Developer**: Abhishek Patel
-- **Email**: Abhishekpatelbth0@gmail.com
-- **GitHub**: [github.com/Abhibth0](https://github.com/Abhibth0)
+- Android development community
+- Material Design team at Google
+- SQLCipher team for secure database
+- Open source contributors
+
+---
+
+## 📊 Statistics
+
+<div align="center">
+  
+  ![GitHub stars](https://img.shields.io/github/stars/Abhibth0/Most_Save?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/Abhibth0/Most_Save?style=social)
+  ![GitHub watchers](https://img.shields.io/github/watchers/Abhibth0/Most_Save?style=social)
+  
+  ![GitHub issues](https://img.shields.io/github/issues/Abhibth0/Most_Save)
+  ![GitHub pull requests](https://img.shields.io/github/issues-pr/Abhibth0/Most_Save)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/Abhibth0/Most_Save)
+  
+</div>
 
 ---
 
 <div align="center">
-  <strong>🔐 Your Security, Your Control 🔐</strong>
+  <strong>⭐ Star this repository if you find it helpful!</strong>
   <br>
-  <sub>Made with ❤️ for privacy-conscious users</sub>
+  <br>
+  Made with ❤️ by <a href="https://github.com/Abhibth0">Abhishek Patel</a>
 </div>
