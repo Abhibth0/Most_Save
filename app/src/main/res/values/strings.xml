@@ -11,6 +11,7 @@
     <string name="menu_search">Search</string>
     <string name="menu_sort">Sort by</string>
     <string name="menu_analyze_passwords">Analyze Passwords</string>
+    <string name="menu_suggest_idea">Suggest an idea</string>
 
     <!-- Screen Titles -->
     <string name="title_add_password">Add New Password</string>
@@ -20,6 +21,7 @@
     <string name="title_settings">Settings</string>
     <string name="title_favorites">Favorites</string>
     <string name="title_analyze_passwords">Analyze Password</string>
+    <string name="title_suggest_idea">Suggest an Idea</string>
 
     <!-- Sort Options -->
     <string name="sort_a_to_z">A to Z</string>
@@ -236,5 +238,12 @@
     <string name="error_state_icon">Error state icon</string>
     <string name="icon_description">Icon</string>
     <string name="selected_icon_indicator">Selected icon indicator</string>
+
+    <!-- Suggest Idea Page -->
+    <string name="suggest_idea_message_hint">Enter your suggestion here...</string>
+    <string name="suggest_idea_submit">Submit</string>
+    <string name="suggest_idea_success">Thank you for your suggestion! Your idea has been sent successfully.</string>
+    <string name="suggest_idea_error">Failed to send suggestion. Please try again.</string>
+    <string name="suggest_idea_empty_message">Please enter your suggestion before submitting.</string>
 
 </resources>

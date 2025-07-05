@@ -29,5 +29,9 @@
             android:id="@+id/nav_history"
             android:icon="@drawable/ic_history"
             android:title="@string/menu_history" />
+        <item
+            android:id="@+id/nav_suggest_idea"
+            android:icon="@drawable/ic_lightbulb"
+            android:title="@string/menu_suggest_idea" />
     </group>
 </menu>

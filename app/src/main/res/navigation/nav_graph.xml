@@ -99,10 +99,12 @@
         android:id="@+id/nav_analyze_passwords"
         android:name="com.example.mostsave.ui.fragments.PasswordAnalysisFragment"
         android:label="@string/title_analyze_passwords"
-        tools:layout="@layout/fragment_password_analysis">
-        <action
-            android:id="@+id/action_nav_analyze_passwords_to_nav_show_password"
-            app:destination="@id/nav_show_password" />
-    </fragment>
+        tools:layout="@layout/fragment_password_analysis" />
+
+    <fragment
+        android:id="@+id/nav_suggest_idea"
+        android:name="com.example.mostsave.ui.fragments.SuggestIdeaFragment"
+        android:label="@string/title_suggest_idea"
+        tools:layout="@layout/fragment_suggest_idea" />
 
 </navigation>

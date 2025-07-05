@@ -1,5 +1,6 @@
 package com.example.mostsave;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_favorites, R.id.nav_categories, R.id.nav_recycle_bin,
-                R.id.nav_settings, R.id.nav_history, R.id.nav_analyze_passwords)
+                R.id.nav_settings, R.id.nav_history, R.id.nav_analyze_passwords, R.id.nav_suggest_idea)
                 .setOpenableLayout(drawerLayout)
                 .build();
 
