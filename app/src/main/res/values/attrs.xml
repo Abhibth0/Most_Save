@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom attribute for navigation item selected background -->
+    <attr name="nav_item_selected_background" format="color" />
+</resources>
+

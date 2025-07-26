@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#FF008577</color>
+    <color name="password_strength_weak">#FF0000</color> <!-- Red -->
+    <color name="password_strength_good">#FFFF00</color> <!-- Yellow -->
+    <color name="password_strength_strongest">#00FF00</color> <!-- Green -->
+
+    <!-- Dialog Icon Chooser Colors -->
+    <color name="primary_color">#1976D2</color>
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="hint_text_color">#BDBDBD</color>
+    <color name="divider_color">#E0E0E0</color>
+    <color name="error_color">#F44336</color>
+
+    <!-- Chip check icon color for light theme -->
+    <color name="chip_check_icon_color">#FF000000</color> <!-- Black for light theme -->
+
+    <!-- Navigation item selected background - semi-transparent primary color -->
+    <color name="nav_item_selected_background">#26000000</color> <!-- 15% opacity placeholder, will be overridden by theme -->
+
+    <!-- Button text color for light theme -->
+    <color name="button_text_color">#FFFFFFFF</color> <!-- White text for light theme buttons -->
+
+    <!-- Added darker_gray color -->
+    <color name="darker_gray">#A9A9A9</color>
+</resources>

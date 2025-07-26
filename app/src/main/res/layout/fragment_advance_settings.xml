@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_import_export_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_label_import_export"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/text_view_export"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_export"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_export"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/text_view_export_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export creates an encrypted backup file of your passwords that can be saved to a secure location."
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:alpha="0.5"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/text_view_import"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_import"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="12dp"
+            android:drawableStart="@drawable/ic_import"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/text_view_import_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import allows you to restore your password data from a previously exported backup file."
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:alpha="0.5"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"/>
+
+    </LinearLayout>
+</layout>

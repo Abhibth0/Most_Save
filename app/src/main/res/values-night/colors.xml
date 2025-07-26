@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chip check icon color for dark theme -->
+    <color name="chip_check_icon_color">#FFFFFFFF</color> <!-- White for dark theme -->
+
+    <!-- Button text color for dark theme -->
+    <color name="button_text_color">#FFFFFFFF</color> <!-- White text for dark theme -->
+
+    <!-- Primary text color for dark theme -->
+    <color name="primary_text_color">#FFFFFFFF</color> <!-- White for dark theme -->
+</resources>
